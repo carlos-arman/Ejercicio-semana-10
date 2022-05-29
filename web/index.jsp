@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : index
+    Created on : 05-29-2022, 03:55:45 PM
+    Author     : sampc
+--%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
     <body>
           <h1> Registro de personas </h1>
         
-        <form action="RECIBIR.do" method="POST">
+        <form action="recibir_SA.do" method="POST">
         DUI:<input type="text" name="txtDui" value="" /><br><br>
         Apellidos:<input type="text" name="txtApellido" value="" /><br><br>
         Nombre:<input type="text" name="txtxNombre" value="" /><br><br>
