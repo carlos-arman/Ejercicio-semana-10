@@ -4,9 +4,17 @@
         <servlet-name>recibir_SA</servlet-name>
         <servlet-class>controladores.recibir_SA</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Mostrar</servlet-name>
+        <servlet-class>controladores.Mostrar_CA</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>recibir_SA</servlet-name>
         <url-pattern>/recibir_SA.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Mostrar</servlet-name>
+        <url-pattern>/mostrar.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
