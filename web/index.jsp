@@ -17,7 +17,7 @@
         <form action="recibir_SA.do" method="POST">
         DUI:<input type="text" name="txtDui" value="" /><br><br>
         Apellidos:<input type="text" name="txtApellido" value="" /><br><br>
-        Nombre:<input type="text" name="txtxNombre" value="" /><br><br>
+        Nombre:<input type="text" name="txtNombre" value="" /><br><br>
         <input type="submit" value="Registrar" name="btn" />
         <input type="submit" value="modificar" name="btnM" />
         <input type="submit" value="eliminar" name="btnE" />
