@@ -86,4 +86,22 @@ ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenam
             java.util.logging.Logger.getLogger(DatosPersona.class.getName()).log(Level.SEVERE, null, ex);
         }
         return person;    }
+    
+    public boolean Delete(int dui){
+        try{
+            String miQuery = "DELETE FROM tb_persona WHERE dui_persona = '" + dui + "';";
+            
+            int estado = 0;
+            state = cnn.createStatement();
+            estado = state.executeUpdate(miQuery);
+            if(estado == 1){
+                return true;
+            }
+        }catch(SQLException ex){
+            java.util.logging.Logger.getLogger(DatosPersona.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
 }
+
+
