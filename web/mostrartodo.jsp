@@ -9,8 +9,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-    <c:forEach var="listaTotal" items="{sessionScope.$personas}">
+        <h1>MUESTRA DE DATOS!</h1>
+    <c:forEach var="listaTotal" items="${sessionScope.$personas}">
         DUI:${listaTotal.dui}<br>
         Apellidos:${listaTotal.apellido}<br>
         Nombres:${listaTotal.nombre}<br>
