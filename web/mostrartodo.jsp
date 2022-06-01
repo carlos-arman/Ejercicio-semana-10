@@ -10,12 +10,13 @@
     </head>
     <body>
         <h1>MUESTRA DE DATOS!</h1>
-    <c:forEach var="listaTotal" items="${sessionScope.$personas}">
-        DUI:${listaTotal.dui}<br>
-        Apellidos:${listaTotal.apellido}<br>
-        Nombres:${listaTotal.nombre}<br>
-        <br>
-        <hr>
-    </c:forEach>
+        <c:forEach var="listaTotal" items="${sessionScope.personas}">
+            <label>DUI:</label>
+            ${listaTotal.dui} <br>
+            <label>Nombre:</label>
+            ${listaTotal.nombre} <br>
+            <label>Apellido:</label>
+            ${listaTotal.apellido} <br>
+        </c:forEach>
     </body>
 </html>

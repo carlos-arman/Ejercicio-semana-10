@@ -12,6 +12,10 @@
         <servlet-name>modificar_SA</servlet-name>
         <servlet-class>controladores.modificar_SA</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Mostrar_CA</servlet-name>
+        <servlet-class>controladores.Mostrar_CA</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>recibir_SA</servlet-name>
         <url-pattern>/recibir_SA.do</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>modificar_SA</servlet-name>
         <url-pattern>/modificar_SA.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Mostrar_CA</servlet-name>
+        <url-pattern>/Mostrar_CA.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -12,15 +12,22 @@
         <title>JSP Page</title>
     </head>
     <body>
-          <h1> Registro de personas </h1>
+       <h1> Registro de personas </h1>
         
         <form action="recibir_SA.do" method="POST">
-        DUI:<input type="text" name="txtDui" value="" /><br><br>
-        Apellidos:<input type="text" name="txtApellido" value="" /><br><br>
-        Nombre:<input type="text" name="txtNombre" value="" /><br><br>
-        <input type="submit" value="Registrar" name="btn" />
-        <input type="submit" value="modificar" name="btnM" />
-        <input type="submit" value="eliminar" name="btnE" />
+            
+            <label>DUI:</label><br>
+            <input type="text" name="txtDui" value="" /><br><br>
+            <label>Apellidos:</label>
+            <input type="text" name="txtApellido" value="" /><br><br>
+            <label>Nombre:</label>
+            <input type="text" name="txtNombre" value="" /><br><br>
+            
+            <input type="submit" value="Registrar" name="btn" />
+            
+            <a href="Mostrar_CA.do">Ver registros</a>
+            
+            
     </form>
     </body>
 </html>
