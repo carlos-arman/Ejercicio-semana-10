@@ -11,12 +11,14 @@
     <body>
         <h1>MUESTRA DE DATOS!</h1>
         <c:forEach var="listaTotal" items="${sessionScope.personas}">
-            <label>DUI:</label>
-            ${listaTotal.dui} <br>
-            <label>Nombre:</label>
-            ${listaTotal.nombre} <br>
-            <label>Apellido:</label>
-            ${listaTotal.apellido} <br>
+              <table cellspacing="0" cellpadding="0" border="1" > 
+                  <tr><td align="right">DUI:</td>
+                      <td>${listaTotal.dui}</td></tr>
+            <tr><td align="right">Nombre:</td>
+                <td>${listaTotal.nombre} </td></tr>
+            <tr><td align="right">Apellido:</td>
+                <td>${listaTotal.apellido} </td></tr>
         </c:forEach>
+              </table>
     </body>
 </html>
