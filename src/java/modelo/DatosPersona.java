@@ -71,7 +71,21 @@ public class DatosPersona {
                 return false;
             }
             
-     
+      public boolean ActualizarD(DatosPersona person) {
+        try{
+                String miQuery="update  tb_persona set id_persona= '" + dui + "' ,apellidos_persona= '" + apellido + "' , nombre_persona= '" + nombre + "';";
+                int es=0;
+                state=cnn.createStatement();
+                es=state.executeUpdate(miQuery);
+                if (es==1){
+                    return true;
+                }
+            } catch (SQLException ex){
+                        Logger.getLogger(DatosPersona.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                return false;
+            }
+  
 
     public ArrayList<DatosPersona> ConsultarD() {
 ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenamiento de tipo persona
@@ -102,6 +116,7 @@ ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenam
         }
         return false;
     }
+
 }
 
 

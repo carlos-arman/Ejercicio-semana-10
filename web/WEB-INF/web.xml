@@ -20,6 +20,10 @@
         <servlet-name>Delete_CA</servlet-name>
         <servlet-class>controladores.Delete_CA</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Modificar_SA</servlet-name>
+        <servlet-class>controladores.Modificar_SA</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>recibir_SA</servlet-name>
         <url-pattern>/recibir_SA.do</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Delete_CA</servlet-name>
         <url-pattern>/Delete_CA.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Modificar_SA</servlet-name>
+        <url-pattern>/Modificar_SA.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
