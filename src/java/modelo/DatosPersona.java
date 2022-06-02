@@ -87,19 +87,35 @@ public class DatosPersona {
             }
   
 
-    public ArrayList<DatosPersona> ConsultarD() {
-ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenamiento de tipo persona
-         try{
-            String miQuery = "SELECT * FROM tb_persona WHERE dui_persona;";
+   public ArrayList<DatosPersona> ConsultarR(){
+        ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenamiento de tipo persona
+        try{
+            String miQuery = "SELECT * FROM tb_persona;";
             state = cnn.createStatement();
             result = state.executeQuery(miQuery);
             while(result.next()){
-                person.add(new DatosPersona(result.getString("dui_persona") + dui, result.getString("apellidos_persona") + nombre, result.getString("nombre_persona") + apellido));
+                person.add(new DatosPersona(result.getString("dui_persona"), result.getString("apellidos_persona"), result.getString("nombre_persona")));
             }
         }catch(SQLException ex){
             java.util.logging.Logger.getLogger(DatosPersona.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return person;    }
+        return person;
+    }
+    
+     public ArrayList ConsultarR(int dui){
+        ArrayList<DatosPersona> person = new ArrayList(); // Crear el arrat de almacenamiento de tipo persona
+        try{
+            String miQuery = "SELECT * FROM tb_persona where dui_persona = " + dui;
+            state = cnn.createStatement();
+            result = state.executeQuery(miQuery);
+            while(result.next()){
+                person.add(new DatosPersona(result.getString("dui_persona"), result.getString("apellidos_persona"), result.getString("nombre_persona")));
+            }
+        }catch(SQLException ex){
+            java.util.logging.Logger.getLogger(DatosPersona.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return person;
+    }
     
     public boolean Delete(int dui){
         try{

@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : 05-29-2022, 03:55:45 PM
-    Author     : sampc
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,7 +12,7 @@
        <h1> Registro de personas </h1>
         
         <form action="recibir_SA.do" method="POST">
-             <table cellspacing="3" cellpadding="0" border="1" bigcolor="E4BCD4" > 
+          <table cellspacing="3" cellpadding="0" border="1" bigcolor="E4BCD4" > 
             <tr><td> <label>DUI:</label><br>
             <input type="text" name="txtDui" value="" /><br><br>
             <label>Apellidos:</label>
@@ -27,7 +23,7 @@
             <input type="submit" value="Registrar" name="btn" />
             
             <a href="Mostrar_CA.do">Ver registros</a></tr>
-             </table>  
+          </table>  
     </form>
        </center>
     </body>

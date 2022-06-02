@@ -34,7 +34,7 @@ public class Mostrar_CA extends HttpServlet {
             
          DatosPersona p = new DatosPersona(); // Conectar a la BD
         ArrayList<DatosPersona> personas = new ArrayList<>();
-        personas = p.ConsultarD(); // Consulta los registros y los almacena en nuevo array llamado personas
+        personas = p.ConsultarR(); // Consulta los registros y los almacena en nuevo array llamado personas
         request.getSession().setAttribute("personas", personas); //Asignar valores a la sesion
         request.getRequestDispatcher("mostrartodo.jsp").forward(request, response);
         
