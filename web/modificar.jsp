@@ -15,7 +15,7 @@
     <body>
         <h1>Modificar registros </h1>
         
-        <form action="Modificar_SA.do">
+        <form action="Modificar_SA.do" method="post">
             
             <c:forEach var="listaTotal" items="${sessionScope.persona}">
                 <input type="text" name="txtDui" value="${listaTotal.dui}" readonly="true"><br>
