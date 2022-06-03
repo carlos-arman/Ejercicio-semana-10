@@ -8,8 +8,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <div class="alert alert-success" style="background-color:red;" >
-   Registro  NO guardado!
+         <div class="alert alert-success" style="background-color:#FF6961;" >
+             <h1>Registro  NO guardado!</h1>
 </div>
     </body>
 </html>

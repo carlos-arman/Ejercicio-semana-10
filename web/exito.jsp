@@ -8,7 +8,7 @@
     </head>
     <body>
     <div class="alert alert-success" style="background-color:green;" >
-   Registro guardado exitosamente!
+        <h1> Registro guardado exitosamente!</h1>
 </div>
     </body>
 </html>

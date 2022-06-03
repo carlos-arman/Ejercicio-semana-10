@@ -11,7 +11,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body> <div class="alert alert-success" style="background-color:#BFD2A2;" >
+   
         <h1>Eliminado con exito</h1>
+</div>
+       
     </body>
 </html>

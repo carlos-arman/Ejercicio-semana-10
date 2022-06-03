@@ -8,6 +8,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Modificado con Exito!</h1>
+      <div class="alert alert-success" style="background-color:#BFD2A2;" >
+          <h1> Modificado exitosamente!</h1>
+</div>
     </body>
 </html>
