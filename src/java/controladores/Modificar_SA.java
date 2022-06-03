@@ -38,7 +38,7 @@ public class Modificar_SA extends HttpServlet {
          DatosPersona per = new DatosPersona();
        //CONDICION
         if(per.ActualizarD(person) == true){
-            request.getRequestDispatcher("exito.jsp").forward(request, response);
+            request.getRequestDispatcher("MConexito.jsp").forward(request, response);
             
         }
         else{

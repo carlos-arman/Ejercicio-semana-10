@@ -56,6 +56,7 @@ public class DatosPersona {
         this.apellido = apellido;
         this.nombre = nombre;
     }
+        
            public boolean InsertarDatos(){
             try{
                 String miQuery="insert into tb_persona values('" + dui + "','" + apellido + "','" + nombre + "');";
@@ -117,11 +118,10 @@ public class DatosPersona {
         return person;
     }
     
-    public boolean Delete(int dui){
+  public boolean eliminar(int dui){
         try{
-            String miQuery = "DELETE FROM tb_persona WHERE dui_persona = '" + dui + "';";
-            
-            int estado = 0;
+            String miQuery = "Delete From tb_persona where dui_persona = '" + dui + "';";
+            int estado = 0; //Estado de la inserción
             state = cnn.createStatement();
             estado = state.executeUpdate(miQuery);
             if(estado == 1){
@@ -132,7 +132,7 @@ public class DatosPersona {
         }
         return false;
     }
+    }
 
-}
 
 

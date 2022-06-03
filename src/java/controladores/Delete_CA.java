@@ -32,7 +32,7 @@ public class Delete_CA extends HttpServlet {
             processRequest(request, response);
             DatosPersona pers = new DatosPersona();
             String dui = request.getParameter("txtDui");
-            if(pers.Delete(Integer.parseInt(dui)) == true)
+            if(pers.eliminar(Integer.parseInt(dui)) == true)
             {
               request.getRequestDispatcher("ExitoEliminado.jsp").forward(request, response);
             
