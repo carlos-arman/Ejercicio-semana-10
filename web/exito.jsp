@@ -7,6 +7,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Registro con exito</h1>
+    <div class="alert alert-success" style="background-color:green;" >
+   Registro guardado exitosamente!
+</div>
     </body>
 </html>
