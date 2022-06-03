@@ -74,7 +74,7 @@ public class DatosPersona {
             
       public boolean ActualizarD(DatosPersona person) {
         try{
-                String miQuery="update  tb_persona set id_persona= '" + dui + "' ,apellidos_persona= '" + apellido + "' , nombre_persona= '" + nombre + "';";
+                String miQuery="Update tb_persona set nombre_persona = '" + person.getNombre() + "', apellidos_persona = '" + person.getApellido() + "' where dui_persona = '" + person.getDui() + "';";
                 int es=0;
                 state=cnn.createStatement();
                 es=state.executeUpdate(miQuery);
