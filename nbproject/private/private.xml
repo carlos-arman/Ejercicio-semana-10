@@ -3,16 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/exito.jsp</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/ExitoEliminado.jsp</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/src/java/modelo/DatosPersona.java</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/src/java/controladores/Modificar_SA.java</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/src/java/controladores/Delete_CA.java</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/index.jsp</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/src/java/controladores/Mostrar_CA.java</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/mostrartodo.jsp</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/modificar.jsp</file>
-            <file>file:/C:/Users/sampc/Documents/NetBeansProjects/Ejercicio-semana-10/web/MConexito.jsp</file>
+            <file>file:/C:/Users/Armando/Documents/GitHub/Ejercicio-semana-10/web/modificar.jsp</file>
+            <file>file:/C:/Users/Armando/Documents/GitHub/Ejercicio-semana-10/src/java/modelo/DatosPersona.java</file>
+            <file>file:/C:/Users/Armando/Documents/GitHub/Ejercicio-semana-10/web/Eliminar.jsp</file>
+            <file>file:/C:/Users/Armando/Documents/GitHub/Ejercicio-semana-10/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>

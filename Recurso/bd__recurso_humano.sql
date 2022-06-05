@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2022 a las 03:40:17
+-- Tiempo de generación: 03-06-2022 a las 08:28:54
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -30,10 +30,17 @@ USE `bd__recurso_humano`;
 --
 
 CREATE TABLE `tb_persona` (
-  `dui_persona` varchar(10) NOT NULL,
-  `apellidos_persona` varchar(30) NOT NULL,
-  `nombre_persona` varchar(30) NOT NULL
+  `dui_persona` int(10) NOT NULL,
+  `apellidos_persona` varchar(30) DEFAULT NULL,
+  `nombre_persona` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tb_persona`
+--
+
+INSERT INTO `tb_persona` (`dui_persona`, `apellidos_persona`, `nombre_persona`) VALUES
+(2873, 'asjsa', 'askla');
 
 --
 -- Índices para tablas volcadas
@@ -44,6 +51,16 @@ CREATE TABLE `tb_persona` (
 --
 ALTER TABLE `tb_persona`
   ADD PRIMARY KEY (`dui_persona`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `tb_persona`
+--
+ALTER TABLE `tb_persona`
+  MODIFY `dui_persona` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=726362777;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
